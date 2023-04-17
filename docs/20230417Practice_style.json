@@ -1,0 +1,70 @@
+{
+  "version": 8,
+  "name": "Empty Style",
+  "metadata": {"maputnik:renderer": "mbgljs"},
+  "sources": {
+    "c": {
+      "type": "vector",
+      "tiles": [
+        "https://k96mz.github.io/20230417Practice/2_vt/coastl/{z}/{x}/{y}.pbf"
+      ],
+      "minZoom": 0,
+      "maxZoom": 14,
+      "maxzoom": 3
+    },
+    "o": {
+      "type": "vector",
+      "tiles": [
+        "https://k96mz.github.io/20230417Practice/2_vt/ocean/{z}/{x}/{y}.pbf"
+      ],
+      "minZoom": 0,
+      "maxZoom": 14,
+      "maxzoom": 3
+    },
+    "g": {
+      "type": "vector",
+      "tiles": [
+        "https://k96mz.github.io/20230417Practice/2_vt/graticules/{z}/{x}/{y}.pbf"
+      ],
+      "minZoom": 0,
+      "maxZoom": 14,
+      "maxzoom": 3
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "maxzoom": 6,
+      "layout": {"visibility": "visible"},
+      "paint": {"background-color": "rgba(144, 103, 58, 1)"}
+    },
+    {
+      "id": "ocean",
+      "type": "fill",
+      "source": "o",
+      "source-layer": "ocean",
+      "maxzoom": 6,
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(46, 63, 221, 1)"}
+    },
+    {
+      "id": "coastl",
+      "type": "line",
+      "source": "c",
+      "source-layer": "coastl",
+      "maxzoom": 3,
+      "layout": {"visibility": "visible"},
+      "paint": {"line-color": "rgba(72, 7, 24, 1)"}
+    },
+    {
+      "id": "graticules",
+      "type": "line",
+      "source": "g",
+      "source-layer": "graticules"
+    }
+  ],
+  "id": "g69o8byb8"
+}
