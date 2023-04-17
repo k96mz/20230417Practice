@@ -1,0 +1,15 @@
+{
+"name": "2_vt/ocean",
+"description": "2_vt/ocean",
+"version": "2",
+"minzoom": "0",
+"maxzoom": "3",
+"center": "-67.500000,20.489949,3",
+"bounds": "-180.000000,-85.051129,180.000000,85.051129",
+"type": "overlay",
+"strategies": "[{},{},{},{\"tiny_polygons\":2}]",
+"format": "pbf",
+"generator": "tippecanoe v2.17.0",
+"generator_options": "tippecanoe -e 2_vt/ocean --no-tile-compression --no-feature-limit --no-tile-size-limit '--drop-rate=1' -Z0 -z3 -L ocean:1_geojson/ocean.geojson",
+"json": "{\"vector_layers\":[{\"id\":\"ocean\",\"description\":\"\",\"minzoom\":0,\"maxzoom\":3,\"fields\":{\"featurecla\":\"String\",\"min_zoom\":\"Number\",\"scalerank\":\"Number\"}}],\"tilestats\":{\"layerCount\":1,\"layers\":[{\"layer\":\"ocean\",\"count\":2,\"geometry\":\"Polygon\",\"attributeCount\":3,\"attributes\":[{\"attribute\":\"featurecla\",\"count\":1,\"type\":\"string\",\"values\":[\"Ocean\"]},{\"attribute\":\"min_zoom\",\"count\":1,\"type\":\"number\",\"values\":[0],\"min\":0,\"max\":0},{\"attribute\":\"scalerank\",\"count\":1,\"type\":\"number\",\"values\":[0],\"min\":0,\"max\":0}]}]}}"
+}
