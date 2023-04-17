@@ -1,0 +1,9 @@
+id: ocean
+type: fill
+source: o
+source-layer: ocean
+maxzoom: 6
+layout:
+  visibility: visible
+paint:
+  fill-color: rgba(46, 63, 221, 1)

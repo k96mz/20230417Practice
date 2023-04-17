@@ -1,0 +1,9 @@
+id: background
+type: background
+maxzoom: 6
+layout:
+  visibility: visible
+paint:
+#  background-color: rgba(144, 103, 58, 1)
+#  background-color: blue
+  background-color: yellow

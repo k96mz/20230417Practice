@@ -1,0 +1,11 @@
+id: coastl
+type: line
+source: c
+source-layer: coastl
+maxzoom: 6
+layout:
+  visibility: visible
+paint:
+#  line-color: rgba(72, 7, 24, 1)
+  line-color: rgba(72, 70, 74, 0.5)
+

@@ -1,0 +1,34 @@
+version: 8
+name: Empty Style
+metadata:
+  maputnik:renderer: mbgljs
+sources:
+  c:
+    type: vector
+    tiles:
+      - https://k96mz.github.io/20230417Practice/2_vt/coastl/{z}/{x}/{y}.pbf
+    minZoom: 0
+    maxZoom: 14
+    maxzoom: 3
+  o:
+    type: vector
+    tiles:
+      - https://k96mz.github.io/20230417Practice/2_vt/ocean/{z}/{x}/{y}.pbf
+    minZoom: 0
+    maxZoom: 14
+    maxzoom: 3
+  g:
+    type: vector
+    tiles:
+      - https://k96mz.github.io/20230417Practice/2_vt/graticules/{z}/{x}/{y}.pbf
+    minZoom: 0
+    maxZoom: 14
+    maxzoom: 3
+sprite: ''
+glyphs: https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf
+layers:
+  - !!inc/file layers/background.yml
+  - !!inc/file layers/ocean.yml
+  - !!inc/file layers/coastl.yml
+  - !!inc/file layers/graticules.yml
+id: g69o8byb8
